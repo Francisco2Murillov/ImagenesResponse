@@ -1,0 +1,54 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+.app{
+    color: whitesmoke;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.img{
+    padding-bottom: 15px;
+    color: greenyellow;
+    text-align: center;
+    background-image:url('/Imagenes/Imagen01.jpg');
+    background-repeat: no-repeat;
+    height:500px;
+    width:100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+/* a qui inicia los Media Querry */
+@media only screen and (min-width:610px) {
+    .img {
+        background-image: url('/Imagenes/imagen02.jpg');
+    }
+
+    .app{
+        background-color: white;
+        border-radius: 25px;
+        color: blue;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .img{
+        background-image: url('/Imagenes/Imagen03.jpg');
+    }
+    .app{
+        background-color: tomato;
+        border-radius: 25px;
+    }
+}
