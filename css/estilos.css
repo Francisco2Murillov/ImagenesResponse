@@ -5,6 +5,7 @@
 
 body{
     height: 100%;
+    
 }
 
 .app{
@@ -22,12 +23,18 @@ body{
     color: greenyellow;
     text-align: center;
     background-image:url('/Imagenes/Imagen01.jpg');
-    background-repeat: no-repeat;
     height:500px;
     width:100%;
     background-position: center;
     background-size: contain;
     border-radius: 50%;
+}
+
+.footer{
+    padding-left: 50%;
+    color: green;
+   
+
 }
 
 /* a qui inicia los Media Querry */
@@ -41,14 +48,20 @@ body{
         border-radius: 25px;
         color: blue;
     }
+    .footer{
+        color:whitesmoke;
+    }
 }
 
 @media only screen and (min-width:1024px) {
     .img{
-        background-image: url('/Imagenes/Imagen03.jpg');
+        background-image:url('/Imagenes/Imagen03.jpg');
     }
     .app{
         background-color: tomato;
         border-radius: 25px;
+    }
+    .footer{
+        color:aqua;
     }
 }
